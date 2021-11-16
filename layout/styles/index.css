@@ -63,7 +63,6 @@ select {
   font-weight: 700;
   font-size: 16px;
   font-style: normal;
-  margin: 0;
   margin-left: -5px;
 }
 
@@ -101,7 +100,6 @@ select {
 
 .product__title {
   margin: 0;
-  white-space: normal;
 }
 
 .product__price {
