@@ -15,6 +15,23 @@
 // 4 (4 / 2, 4 / 3, 4 / 4) => false
 //input : num
 //output : undefine
-function getPrimes(num) {
 
+function isPrime(number) {
+   for (let index = 2; index < number; index += 1) {
+      if (number % index === 0) {
+         return false;
+      }
+   }
+   return true;
 }
+
+function getPrimes(num) {
+   for (let i = 2; i <= num; i += 1) {
+      if (isPrime(i)) {
+            console.log(i);
+      }
+   }
+}
+
+// test data   
+getPrimes(15);
