@@ -51,12 +51,17 @@ const anotherNumbersList = [5, 0, 8, 10, -4, 50, 220];
 // callback
 // input: num, index(optional), array(optional);
 // output: boolean;
-const filterRes = anotherNumbersList.filter(function filterCallback(num) {
-   if (num > 5) {
-      return true;
-   } else {
-      return false;
-   }
-});
-console.log(filterRes);
 
+// bad
+// const filterRes = anotherNumbersList.filter(function filterCallback(num) {
+//    if (num > 5) {
+//       return true;
+//    } else {
+//       return false;
+//    }
+// });
+// console.log(filterRes);
+
+// good
+const filterRes = anotherNumbersList.filter(el => el > 10);
+console.log(filterRes);
